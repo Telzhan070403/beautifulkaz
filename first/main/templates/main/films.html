@@ -1,0 +1,52 @@
+
+{% extends   'main/create.html' %}
+{% load static %}
+{% block content %}
+
+{% comment %} {% endblock %} {% endcomment %}
+
+<h1>
+   <div class="container">
+       <div class="row">
+         <div class="col-4 col-sm-4">
+            <img  id = "image "src="{% static 'main/img/жаужурек.jpg' %}"/>
+            {% for el in movie %}
+            <h3>{{ el.film_name }}</h3>
+            <p>{{ el.about2}}</p>
+             {% endfor %}
+             <button type='submit' class="btn btn-primary m-3">Delete</button>
+             <button type='submit' class="btn btn-primary m-3">Edit</button>
+         </div>
+         <div class="col-4 col-sm-4">
+            <img id = "image" src="{% static 'main/img/келинка.jpg' %}"/>
+            <h1>Келинка Сабина</h1>
+            <p> Сабина келін — полнометражный фильм, вышедший на экраны Казахстана 27 ноября 2014 года. Исполнителем главной роли в фильме является известный шоумен Нуртас Адамбаев. Фильм является продолжением телевизионного ситкома KZландия и повествует о судьбе городской девушки в условиях сельского замужества.
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+         </div>
+         <div class="col-4 col-sm-4">
+            <img  id = "image" src="{% static 'main/img/бизнеспоказахски.jpg' %}"/>
+            <h1> Бизнес по казакский</h1>
+            <p> Комедийный фильм "Бизнес по-казахски" про начинающего бизнесмена по имени Жомарт, который первым делом решает собрать хороших работников для успешного дела. Он хочет открыть свою гостиницу и находит даже крупного инвестора, который готов вложить огромные деньги на новый проект.
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+         </div>
+     
+         <!-- Force next columns to break to new line at md breakpoint and up -->
+         <div class="w-200 d-none d-md-block"></div>
+         <div class="col-4 col-sm-4">
+            <img  id = "image "src="{% static 'main/img/шал.jpg' %}"/>
+            <h1> Шал</h1>
+            <p> Действие фильма происходит в сельской местности в современном Казахстане. Главный герой, старик, собираясь отогнать овец на пастбище, заблудился в степи. В попытке найти правильный путь он несколько раз нарывается на стаю волков.
+               Тем временем его внук выходит на поиски дедушки при помощи соседей и служб спасения.
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+         </div>
+        
+       </div>
+     </div>
+</h1>
+{% endblock content %}

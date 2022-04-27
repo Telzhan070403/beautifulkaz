@@ -1,0 +1,14 @@
+{% extends   'main/create.html' %}
+{% load static %}
+{% block content %}
+<div  class="p-3= mb-2 bg-dark text-white text-center">
+   <br>
+     <h3>
+        <form method="post" >
+        {% csrf_token %}
+         {{ form.song_name }}</h3> <br>
+           <p>{{ form.about }}</p><br>
+<a href="{% url 'news-detail' singers.id %} "><button class="btn btn-warning">өзгерту</button></a><br><br>
+</form>
+</div>
+{% endblock content%}

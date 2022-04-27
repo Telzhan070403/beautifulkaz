@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{
+    padding: 50px;
+    line-height: 1.4;
+    color: var(--dark);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(static 'main/img/forcity.jpg' ); */
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+}
+.about-content p{
+    text-align: center;
+    margin-left: 50px;  
+}
+.about-content h2{
+    text-align: center;
+    margin-left: 50px;
+}
+.circle{
+    display: flex;
+}
+.container img{
+    width :300px;
+    height : 350px;
+} 
+.container h1{ 
+ font-size: 25px;
+}
+.container p{
+font-size :18px
+}
+
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    /* max-width: 1320px; */
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+/* .container1{
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("/static/main/img/photo.jpg");
+    }
+ */
+
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+ 
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: white;
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+.blog{
+    padding: 5rem 0;
+}
+
+.blog-content{
+    display: flex;
+    
+}
+.title{
+    text-align: center;
+}
+.blog-item{
+    padding: 50px;
+}
+.prosto #suret{
+    width: 450px;
+     height: 300px;
+}
+footer{
+    text-align: center;
+    padding: 450px 0;
+    
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+footer p{
+   margin-right: 10px;
+}
+.username{
+    color: red;
+}

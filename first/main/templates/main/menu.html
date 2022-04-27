@@ -1,0 +1,67 @@
+
+{% extends   'main/create.html' %}
+{% load static %}
+{% block content %}
+
+{% comment %} {% endblock %} {% endcomment %}
+
+<h1>
+    <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-4">
+             <img  id = "image " src="{% static 'main/img/kamzol.jpeg' %}"/>
+             <h1>КӨЙЛЕК</h1>
+             <p> Көйлек – әйелдерге арналған киімнің бір түрі (Қазақстанның кейбір аймақтарында ерлер жейдесін де Көйлек деп атайды). Қыздар мен әйелдер Көйлекгін бүрмелі, тік етек, қос етек, үш етек, көп қатарлы деген бірнеше түрге бөледі.
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+          </div>
+
+          <div class="col-4 col-sm-4">
+            <img  id = "image " src="{% static 'main/img/saukele.jpeg'%}"/>
+            {% for el in saykele %}
+            <h3>{{ el.titles }}</h3>
+            <p>{{ el.description1 }}</p>
+             {% endfor %}
+             <button type='submit' class="btn btn-primary m-3">Delete</button>
+             <button type='submit' class="btn btn-primary m-3">Edit</button>
+          </div>
+          <div class="col-4 col-sm-4">
+            <img id = "image" src="{% static 'main/img/shapan.jpg'%}"/>
+            <h1> ШАПАН </h1>
+            <p> Шапан — қазақтын ежелгі әрі кәделі киімі.[1] Ол Қазақстан мен Орта Азия халықтарының ұлттық киімі болып табылады. Оны қалың матадан арасына жүн, мақта салып, астарлан немесе қос астарлан сырып тігеді. 
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+          </div>
+      
+          <!-- Force next columns to break to new line at md breakpoint and up -->
+          <div class="w-200 d-none d-md-block"></div>
+          <div class="col-4 col-sm-4">
+            <img id= "image" src="{% static 'main/img/bilezik.jpeg' %}"/>
+            <h1> БІЛЕЗІК </h1>
+            <p> білекке тағылатын әшекейлі, сәндік бұйым. Білезік сөзінің түп-төркіні білек және жүзік (білекжүзік — білежүзік — білеүзік — білезік) сөзінен туындаса керек
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+          </div>
+          <div class="col-4 col-sm-4">
+              <img id = "image" src="{% static 'main/img/syrga.png' %}"/>
+              <h1> СЫРҒА </h1>
+              <p> Сырға – сән үшін тағылатын зергерлік бұйым. Сырға тағу бүкіл дүние жүзі халықтарына тән әдет. Сырғаны көбіне әйелдер құлаққа тағады, кейбір елдерде мұрынға тағу да (Үндістан мен Африкада) кездеседі.
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+            </div>
+          <div class="col-4 col-sm-4">
+            <img id ="image" src="{% static 'main/img/takiya.jpeg' %}"/>
+            <h1> ТАҚИЯ </h1>
+            <p> Тақия – ерлердің жеңіл бас киімі. Тақияның түрлері көп. Биік төбелі, тегіс төбелі және үшкір төбелі тақия. Ерлер киетін тақияда теңге, моншақ, тана болмайды.
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+          </div>
+        </div>
+      </div>
+</h1>
+{% endblock content%}

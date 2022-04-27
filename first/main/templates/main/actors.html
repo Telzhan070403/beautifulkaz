@@ -1,0 +1,51 @@
+
+{% extends   'main/create.html' %}
+{% load static %}
+{% block content %}
+
+{% comment %} {% endblock %} {% endcomment %}
+
+<h1>
+   <div class="container">
+       <div class="row">
+         <div class="col-4 col-sm-4">
+            <img  id = "image "src="{% static 'main/img/тауакел.jpg' %}"/>
+            {% for el in actor %}
+            <h3>{{ el.actor_name }}</h3>
+            <p>{{ el.about1}}</p>
+             {% endfor %}
+             <button type='submit' class="btn btn-primary m-3">Delete</button>
+             <button type='submit' class="btn btn-primary m-3">Edit</button>
+         </div>
+         <div class="col-4 col-sm-4">
+            <img id = "image" src="{% static 'main/img/газиза.jpg'  %}"/>
+            <h1>Газиза Абдинабиева</h1>
+            <p> Газиза Абдинабиева 3 декабря 1948; Сырдарьинский район, Казахская ССР, СССР — 18 апреля 2021; Алматы) — советская, казахская актриса кино и театра. Заслуженная артистка Казахской ССР (1991). Кавалер орденов «Курмет» (2006) и «Парасат» (2018).
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+         </div>
+         <div class="col-4 col-sm-4">
+            <img  id = "image" src="{% static 'main/img/акан.jpg' %}"/>
+            <h1> Акан Сатаев</h1>
+            <p> Акан Каргамбаевич Сатаев 23 декабря 1971 года, Караганда, Казахстан) — казахстанский кинорежиссёр,актёр, сценарист и продюсер. Основатель киностудии SataiFilm. С 7 июля 2020 года — президент АО «Казахфильм». Заслуженный деятель Казахстана (2013), лауреат Государственной премии Республики Казахстан (2018).
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+         </div>
+     
+         <!-- Force next columns to break to new line at md breakpoint and up -->
+         <div class="w-200 d-none d-md-block"></div>
+         <div class="col-4 col-sm-4">
+            <img  id = "image "src="{% static 'main/img/асел.jpg' %}"/>
+            <h1> Асел Сагатова</h1>
+            <p> Родилась 5 мая 1985 года. Происходит из племени Найман Среднего жуза.С возраста девяти лет живёт в городе Алматы.В Алматы окончила школу с хореографическим уклоном на русском языке. По собственному признанию, во время учёбы в школе любимым предметом была математика[2]. Хотела стать телеведущей и мама повела её на курсы новостных дикторов. Но по возрасту она не подходила и ей посоветовали перейти в группу для фотомоделей. В итоге,Асель взяли работать в модельное агентство
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+         </div>
+        
+       </div>
+     </div>
+</h1>
+{% endblock content %}

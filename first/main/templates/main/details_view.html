@@ -1,0 +1,11 @@
+{% extends   'main/create.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+    <div class="col-4 col-sm-4">
+       <h3>{{ singer.song_name }}</h3>
+       <p>{{ singer.about }}</p>
+        <a href="{% url 'news-update' singer.id %} "><button class="btn btn-success">жаңарту</button></a>
+        <a href="{% url 'news-delete' singer.id %} "><button class="btn btn-danger">жою</button></a>
+    </div>
+    {% endblock content%}

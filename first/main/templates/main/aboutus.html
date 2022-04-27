@@ -1,0 +1,33 @@
+{% extends   'main/create.html' %}
+{% load static %}
+{% block content %}
+
+
+<section class = "about" id = "about">
+    <div class = "container">
+      <div class = "about-content">
+        <div class = "prosto">
+          <img id = "suret" src = "{% static 'main/img/main.jpg' %}" alt = "" >
+        </div>
+        <div class = "about-text">
+          <div class = "title">
+            <h2>Charms of Kazakhstan</h2>
+            <p>myKazakstan</p>
+          </div>
+          <p>We chose a travel blog because we want to visit beautiful places around the world ourselves. We have chosen the most beautiful places in our opinion.</p>
+          <p>We have collected relevant information about the most amazing places in the world. We hope you find on our blog what you were looking for</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class = "social-links">
+      <a href = "#"><i class = "fab fa-facebook-f"></i></a>
+      <a href = "#"><i class = "fab fa-twitter"></i></a>
+      <a href = "https://www.instagram.com/bekkalikyzi/"><i class = "fab fa-instagram"></i></a>
+      <a href = "#"><i class = "fab fa-pinterest"></i></a>
+    </div>
+    <p> p.s қуғынбайлар</p>
+  </footer>
+  
+{% endblock content %}

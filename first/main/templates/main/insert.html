@@ -1,0 +1,15 @@
+{% extends   'main/create.html' %}
+{% load static %}
+{% block content %}
+<div class="features">
+    <h1> Әншілерді енгізу</h1>
+    <form method="post" >
+        {% csrf_token %}
+        {{ form.song_name }}<br>
+        {{ form.about }}<br>
+        <span>{{ error }}</span>
+        <button type="submit" class="btn btn-success">Қосу</button>
+    </form>
+</div>
+
+{% endblock content%}

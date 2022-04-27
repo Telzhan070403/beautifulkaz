@@ -1,0 +1,60 @@
+
+{% extends   'main/create.html' %}
+{% load static %}
+{% block content %}
+
+{% comment %} {% endblock %} {% endcomment %}
+
+<h1>
+   <div class="container">
+    <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-4">
+            <img id = "image" src="{% static 'main/img/baursak.jpeg' %}"/>
+            <h1> БАУЫРСАҚ</h1>
+            <p> Қазақтың ұлттық тағамы. Бауырсақ – бидай ұнын ашытып, әртүрлі үлгіде жасап, майға пісіреді. Қазақтың той, мереке дастарқанында міндетті түрде бауырсақ болуға тиісті. 
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+          </div>
+          <div class="col-4 col-sm-4">
+            <img  id =" image" src="{% static 'main/img/курт.jpeg' %}"/>
+            <h1> ҚҰРТ</h1>
+            <p> Құрт — сүт өнімдерінен дайындалатын тағам.
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+          </div>
+          <div class="col-4 col-sm-4">
+            <img id = "image" src="{% static 'main/img/balkaymak.jpeg'%}"/>
+            {% for el in balkaymak %}
+            <h3>{{ el.word }}</h3>
+            <p>{{ el.description2 }}</p>
+             {% endfor %}
+             <button type='submit' class="btn btn-primary m-3">Delete</button>
+             <button type='submit' class="btn btn-primary m-3">Edit</button>
+          </div>
+      
+          <!-- Force next columns to break to new line at md breakpoint and up -->
+          <div class="w-200 d-none d-md-block"></div>
+          <div class="col-4 col-sm-4">
+            <img  id = "image " src="{% static 'main/img/ayran.jpeg'  %}"/>
+            <h1> АЙРАН</h1>
+            <p> Айран - пісірілген сиыр, қой, ешкі сүтінің жылы кезінде ашытқы (айран, қаймақ) қосып, ұйытып дайындайтын қышқыл дәмді ақ тағам түрі.
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+          </div>
+          <div class="col-4 col-sm-4">
+            <img id ="image"  src="{% static 'main/img/besh.jpeg'%}"/>
+            <h1> БЕШБАРМАҚ</h1>
+            <p>Бешбармақ - қырғыздың бас тағамының атауы жане қазақтың бас тағамының орыс тілінен ауысып қалыптасқан атауы.
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+           <button type='submit' class="btn btn-primary m-3">Edit</button>
+          </div>
+          
+        </div>
+      </div>
+</h1>
+{% endblock content %}

@@ -1,0 +1,66 @@
+
+{% extends   'main/create.html' %}
+{% load static %}
+{% block content %}
+
+{% comment %} {% endblock %} {% endcomment %}
+
+<h1>
+   <div class="container">
+       <div class="row">
+         <div class="col-4 col-sm-4">
+            <img  id = "image "src="{% static 'main/img/aktau.jpg' %}"/>
+            {% for el in aktau %}
+            <h3>{{ el.title }}</h3>
+            <p>{{ el.description }}</p>
+             {% endfor %}
+             <button type='submit' class="btn btn-primary m-3">Delete</button>
+             <button type='submit' class="btn btn-primary m-3">Edit</button>
+         </div>
+         <div class="col-4 col-sm-4">
+            <img id = "image" src="{% static 'main/img/almaty.jpg'  %}"/>
+            <h1> АЛМАТЫ</h1>
+            <p> Алматы — Қазақстанның ең үлкен қаласы. Ол Тянь-Шань тауларының солтүстігінде, Іле Алатауының баурайында, Қазақстан Республикасының оңтүстік-шығысында орналасқан.
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+           <button type='submit' class="btn btn-primary m-3">Edit</button>
+         </div>
+         <div class="col-4 col-sm-4">
+            <img  id = "image" src="{% static 'main/img/shymkent.jpg' %}"/>
+            <h1> ШЫМКЕНТ</h1>
+            <p> Шымкент — Қазақстандағы қала, Республикалық маңызы бар қала[5], 2018 жылдың 19 маусымына дейінгі Түркістан облысының орталығы
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+           <button type='submit' class="btn btn-primary m-3">Edit</button>
+         </div>
+     
+         <!-- Force next columns to break to new line at md breakpoint and up -->
+         <div class="w-200 d-none d-md-block"></div>
+         <div class="col-4 col-sm-4">
+            <img  id = "image "src="{% static 'main/img/aktobe.jpeg' %}"/>
+            <h1> АКТӨБЕ</h1>
+            <p> Ақтөбе Қазақстанның батысында, Ақтөбе облысының солтүстік бөлігінде орналасқан. 
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+         </div>
+         <div class="col-4 col-sm-4">
+            <img src="{% static 'main/img/nursultan.jpg'%}"/>
+            <h1> НҰР-СҰЛТАН </h1>
+            <p> Нұр-Сұлтан— 1997 жылғы 10 желтоқсаннан бастап Қазақстан Республикасының елордасы. Акмолинск қала мәртебесін 1862 жылғы 26 қыркүйекте алды
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+            <button type='submit' class="btn btn-primary m-3">Edit</button>
+         </div>
+         <div class="col-4 col-sm-4">
+            <img id = "image" src="{% static 'main/img/semey.jpeg' %}"/>
+            <h1> СЕМЕЙ</h1>
+            <p> Семей — Шығыс Қазақстан облысының батыс өңіріндегі екінші орындағы ірі қала болып табылады. Ол Ертіс өзенінің екі жағасына орналасқан.
+            </p>
+            <button type='submit' class="btn btn-primary m-3">Delete</button>
+           <button type='submit' class="btn btn-primary m-3">Edit</button>
+         </div>
+       </div>
+     </div>
+</h1>
+{% endblock content %}
